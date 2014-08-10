@@ -89,43 +89,43 @@
 <section class="boxes">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 nopadding">
 				<div class="view view-sixth">
 					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
 						<h2>Hover Style #6</h2>
 						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#" %>
+						<%= link_to "Read More", "#", class:"btn btn-primary" %>
 					</div>
 				</div> 
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 nopadding">
 				<div class="view view-fifth">
 					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
 						<h2>Hover Style #5</h2>
 						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#" %>
+						<%= link_to "Read More", "#", class:"btn btn-primary" %>
 					</div>
 				</div> 
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 nopadding">
 				<div class="view view-first">
 					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
-						<h2>Hover Style #1</h2>
+						<h2 style="font-family:'latoregular';">Sponsorships</h2>
 						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#" %>
+						<%= link_to "Read More", "#", class:"btn btn-primary" %>
 					</div>
-				</div> 
+				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 nopadding">
 				<div class="view view-fourth">
 					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
 						<h2>Hover Style #4</h2>
 						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#" %>
+						<%= link_to "Read More", "#", class:"btn btn-primary" %>
 					</div>
 				</div> 
 			</div>
@@ -133,6 +133,58 @@
 		</div>
 	</div>
 </section>
+
+<!-- BUBBLES WITH TEXT -->
+<section class="bubbles">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-3">
+						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
+					</div>
+					<div class="col-md-9">
+						<h3>This is where a title goes</h3>
+						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
+					</div>
+					<div class="col-md-9">
+						<h3>This is where a title goes</h3>
+						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-3">
+						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
+					</div>
+					<div class="col-md-9">
+						<h3>This is where a title goes</h3>
+						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
+					</div>
+					<div class="col-md-9">
+						<h3>This is where a title goes</h3>
+						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
 
 <!-- SIGN UP FOR UPDATES -->
 <section>

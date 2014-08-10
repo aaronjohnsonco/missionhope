@@ -1,15 +1,15 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.missionStatement { font-family:'latoregular';font-size:1.5em;margin-bottom:25px; }
+.missionStatement { font-family:'latolight';font-size:1.5em;margin-bottom:25px; }
 a.missionStatementLink { font-family:'latoregular';color:#E99824;font-size:1.2em; }
 
 .callToAction { border-top:1px solid #C7BFB9;border-bottom:1px solid #C7BFB9;padding-top:20px;padding-bottom:15px; }
 .nopadding {
-   padding: 0 !important;
+   padding: 5px !important;
    margin: 0 !important;
 }
-.boxes {border-top:3px solid #D5D1CF; }
+.boxes {border-top:3px solid #D5D1CF;background:#f7f7f7; }
 
 .displayed { display:block;margin-left:auto;margin-right:auto;}
 .btn-box { margin-top:300px;margin-right:50px;margin-left:30px;}
@@ -24,7 +24,7 @@ a.missionStatementLink { font-family:'latoregular';color:#E99824;font-size:1.2em
 .ftrText { margin-bottom:50px;font-family:'latoregular';text-transform:uppercase;color:#999;text-align:center;font-size:.85em;letter-spacing:1px; }
 
 .boxes { padding-top:50px;padding-bottom:100px; }
-
+.bubbles { padding:50px 0;}
 
 /* IMAGE HOVER STYLES */
 .view {
@@ -98,7 +98,8 @@ a.missionStatementLink { font-family:'latoregular';color:#E99824;font-size:1.2em
    transition: all 0.4s ease-in-out 0.5s;
 }
 .view-sixth .mask {
-   background-color: rgba(146,96,91,0.5);
+   /*background-color: rgba(146,96,91,0.5);*/
+   background-color: rgba(0,0,0,0.5);
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -291,7 +292,8 @@ a.missionStatementLink { font-family:'latoregular';color:#E99824;font-size:1.2em
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
-   background-color: rgba(219,127,8, 0.7);
+   /*background-color: rgba(219,127,8, 0.7);*/
+   background-color: rgba(0,0,0, 0.4);
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.4s ease-in-out;
    -o-transition: all 0.4s ease-in-out;
