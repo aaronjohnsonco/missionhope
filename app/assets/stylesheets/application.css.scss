@@ -58,7 +58,7 @@
 }
 .navbar-secondary .navbar-nav > li > a:hover,
 .navbar-secondary .navbar-nav > li > a:focus {
-  color: #888;
+  color: #E88D02;
   background-color: transparent;
 }
 .navbar-secondary .navbar-nav > .active > a,
@@ -101,8 +101,27 @@
   line-height: 50px;
 }
 
-.navbar-nav > li > a { padding-top:18px;padding-bottom:18px;line-height:36px; }
+.navbar-nav {
+  margin: 7.5px -15px;
+}
 
+.navbar-nav > li {}
+
+.navbar-nav > li > a { 
+	padding-top:3px;
+	padding-bottom:3px;
+	line-height:36px;
+	margin-top:16px;
+	margin-bottom:16px; 
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 0px 0px;
+}
 
 
 /* CUSTOM BUTTONS */
