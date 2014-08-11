@@ -49,6 +49,35 @@
   background-color: transparent;
 }
 
+.navbar-secondary {
+  background: #EEDC73;
+}
+.navbar-secondary .navbar-nav > li > a {
+  color: #E88D02;
+  font-family:'latoregular';
+}
+.navbar-secondary .navbar-nav > li > a:hover,
+.navbar-secondary .navbar-nav > li > a:focus {
+  color: #888;
+  background-color: transparent;
+}
+.navbar-secondary .navbar-nav > .active > a,
+.navbar-secondary .navbar-nav > .active > a:hover,
+.navbar-secondary .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-secondary .navbar-nav > .disabled > a,
+.navbar-secondary .navbar-nav > .disabled > a:hover,
+.navbar-secondary .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+.navbar-secondary .navbar-brand-secondary {
+	color:#E88D02;
+}
+
 @media (min-width: 768px) {
 
 .navbar-brand {
@@ -62,6 +91,14 @@
 .navbar-brand:focus {
   text-decoration: none;
 }
+}
+
+.navbar-brand-secondary {
+	float: left;
+  height: 50px;
+  padding: 12px 15px 15px 15px;
+  font-size: 18px;
+  line-height: 50px;
 }
 
 .navbar-nav > li > a { padding-top:18px;padding-bottom:18px;line-height:36px; }
@@ -195,3 +232,11 @@ fieldset[disabled] .btn-home.active {
   color: #fff;
   background-color: #333;
 }
+
+.navbar-sec {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+

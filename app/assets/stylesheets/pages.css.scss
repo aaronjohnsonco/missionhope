@@ -24,7 +24,11 @@ a.missionStatementLink { font-family:'latoregular';color:#E99824;font-size:1.2em
 .ftrText { margin-bottom:50px;font-family:'latoregular';text-transform:uppercase;color:#999;text-align:center;font-size:.85em;letter-spacing:1px; }
 
 .boxes { padding-top:50px;padding-bottom:100px; }
-.bubbles { padding:50px 0;}
+.bubbles { padding:75px 0 100px 0;background:#f9f9f9;border-top:3px solid #D5D1CF; }
+.callout { background:#EEDC73;color:#E88D02;padding:20px; }
+.callout h3 { color:#E88D02;margin:0; }
+.bottomSpace { margin-bottom:50px; }
+
 
 /* IMAGE HOVER STYLES */
 .view {
