@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .missionStatement { font-family:'latolight';font-size:1.5em;margin-bottom:25px; }
-.missionStatementLink:link { font-family:'latoregular';color:#E99824;font-size:1.2em; }
-.missionStatementLink:hover { font-family:'latoregular';color:#E99824;font-size:1.2em;text-decoration:none; }
+a.missionSL { font-family:'latoregular';color:#E99824;font-size:1.2em; }
+a.missionSL:hover { font-family:'latoregular';color:#E99824;font-size:1.2em;text-decoration:none; }
 
 
 .callToAction { border-top:1px solid #C7BFB9;border-bottom:1px solid #C7BFB9;padding-top:20px;padding-bottom:15px; }
