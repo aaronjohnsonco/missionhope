@@ -52,7 +52,7 @@
 }
 
 .navbar-secondary {
-  background: #EEDC73;
+  background: #eee;
 }
 .navbar-secondary .navbar-nav > li > a {
   color: #E88D02;
@@ -78,6 +78,9 @@
 
 .navbar-secondary .navbar-brand-secondary {
 	color:#E88D02;
+  font-family:'latoblack';
+  padding-left:0;
+  font-size:1.5em;
 }
 
 @media (min-width: 768px) {
