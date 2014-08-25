@@ -1,46 +1,16 @@
-<section class="hidden-sm hidden-xs">
+<section>
 	<div class="topHome">
 
-		<!-- NAV -->
-		<div class="topNav">
-			<nav class="navbar navbar-op" role="navigation">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example			-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a href="/" class="navbar-brand"><img src="assets/logoNav.png" /></a>
-			    </div>
-			
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      
-			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-4">
-			        <li><a href="#">ABOUT</a></li>
-			        <li><a href="#">SPONSORSHIP</a></li>
-			        <li><a href="#">FAQ</a></li>
-			        <li><a href="#">CONTACT</a></li>
-			   
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-		</div>
-		<!-- END TOPNAV -->
+		<%= render 'topnav' %>
 	
 		<div class="container-fluid">
 			
 			<div class="row">
-				<div class="col-md-3 col-md-offset-9 hidden-xs hidden-sm">
+				<div class="col-md-3 col-md-offset-9">
 					<div class="btn-box">
 						<p class="text-center"><%= link_to "Donate Now", "#", class: "btn btn-home btn-block" %></p>
 						<p class="text-center"><%= link_to "Sponsor a Child", "#", class: "btn btn-home btn-block" %></p>
-						<p class="btn-text">Spondor a child for as little as $45 a month. You can also support us in othe aways. Find out how.</p>
+						<!--<p class="btn-text">Spondor a child for as little as $34 a month. Find out how.</p>-->
 					</div>
 				</div>
 			</div>
@@ -49,74 +19,6 @@
 
 
 	</div>
-</section>
-
-<section class="hidden-md hidden-lg">
-	<div class="topHome-mobile">
-
-		<!-- NAV -->
-		<div class="topNav">
-			<nav class="navbar navbar-op" role="navigation">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example			-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a href="/" class="navbar-brand"><img src="assets/logoNav.png" /></a>
-			    </div>
-			
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      
-			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-4">
-			        <li><a href="#">ABOUT</a></li>
-			        <li><a href="#">SPONSORSHIP</a></li>
-			        <li><a href="#">FAQ</a></li>
-			        <li><a href="#">CONTACT</a></li>
-			   
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-		</div>
-		<!-- END TOPNAV -->
-	
-		<div class="container-fluid">
-			
-			<div class="row">
-				<div class="col-md-3 col-md-offset-9 hidden-xs hidden-sm">
-					<div class="btn-box">
-						<p class="text-center"><%= link_to "Donate Now", "#", class: "btn btn-home btn-block" %></p>
-						<p class="text-center"><%= link_to "Sponsor a Child", "#", class: "btn btn-home btn-block" %></p>
-						<p class="btn-text">Spondor a child for as little as $45 a month. You can also support us in othe aways. Find out how.</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-
-
-	</div>
-</section>
-
-<section class="visible-xs visible-sm mobileHomeBtns">
-	<div class="row">
-		<div class="col-sm-5 col-sm-offset-1">
-			<p class="text-center"><%= link_to "Donate Now", "#", class: "btn btn-home btn-block" %></p>
-		</div>
-		
-		<div class="col-sm-5">
-			<p class="text-center"><%= link_to "Sponsor a Child", "#", class: "btn btn-home btn-block" %></p>
-		</div>
-	</div>
-
-	
-						
 </section>
 
 <section class="callToAction">
@@ -124,7 +26,8 @@
 		<div class="row">
 			<div class="col-md-offset-1 col-md-10">
 				<p class="missionStatement text-center">Matumaini means "Hope" in Swahili. Our mission is to bring just that to under privileged widows and orphans in Rwanda and DRC Africa.</p>
-				<p class="text-center"><a ng-hreg="#" class="missionStatementLink">Learn more about Matumaini's Mission ></a></p>
+			
+				<p class="text-center"><%= link_to "Learn more about Matumaini's Mission", story_path, class: "missionSL" %></p>
 			</div>
 		</div>
 	</div>
@@ -132,56 +35,61 @@
 
 
 <!-- BOXES SECTION -->
-<!--<section class="boxes">
+<section class="boxes">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 nopadding">
-				<div class="view view-sixth">
-					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
-					<div class="mask">
-						<h2>Hover Style #6</h2>
-						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#", class:"btn btn-primary" %>
-					</div>
-				</div> 
-			</div>
-			<div class="col-md-3 nopadding">
-				<div class="view view-fifth">
-					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
-					<div class="mask">
-						<h2>Hover Style #5</h2>
-						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#", class:"btn btn-primary" %>
-					</div>
-				</div> 
-			</div>
-			<div class="col-md-3 nopadding">
+			<div class="col-md-3">
+				
 				<div class="view view-first">
-					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
+					<%= image_tag "donate.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
-						<h2 style="font-family:'latoregular';">Sponsorships</h2>
-						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#", class:"btn btn-primary" %>
+						<h2>How to Help</h2>
+						<!--<p>This is text that will appear in the box when I hover over it.</p>-->
+						<%= link_to "Read More", "#", class:"btn btn-home btn-sm" %>
 					</div>
 				</div>
+				<p class="text-center box-text">Learn how you can help send kids in Rwanda and DNC Africa</p> 
 			</div>
-			<div class="col-md-3 nopadding">
-				<div class="view view-fourth">
-					<%= image_tag "img.jpg", class: "img-rouded img-responsive", alt: "img" %>
+			<div class="col-md-3">
+				<div class="view view-first">
+					<%= image_tag "sponsorship.jpg", class: "img-rouded img-responsive", alt: "img" %>
 					<div class="mask">
-						<h2>Hover Style #4</h2>
-						<p>This is text that will appear in the box when I hover over it.</p>
-						<%= link_to "Read More", "#", class:"btn btn-primary" %>
+						<h2>Sponsorships</h2>
+						<!--<p>This is text that will appear in the box when I hover over it.</p>-->
+						<%= link_to "Read More", "#", class:"btn btn-home btn-sm" %>
 					</div>
-				</div> 
+				</div>
+				<p class="text-center box-text">Learn about how you can sponsor a child in need</p>  
+			</div>
+			<div class="col-md-3">
+				<div class="view view-first">
+					<%= image_tag "kids.jpg", class: "img-rouded img-responsive", alt: "img" %>
+					<div class="mask">
+						<h2>Our Story</h2>
+						<!--<p>This is text that will appear in the box when I hover over it.</p>-->
+						<%= link_to "Read More", "#", class:"btn btn-home btn-sm" %>
+					</div>
+				</div>
+				<p class="text-center box-text">Learn more about Matumaini's Mission</p> 
+			</div>
+			<div class="col-md-3">
+				<div class="view view-first">
+					<%= image_tag "spotlight.jpg", class: "img-rouded img-responsive", alt: "img" %>
+					<div class="mask">
+						<h2>Spotlight Child</h2>
+						<!--<p>This is text that will appear in the box when I hover over it.</p>-->
+						<%= link_to "Read More", "#", class:"btn btn-home btn-sm" %>
+					</div>
+				</div>
+				<p class="text-center box-text">Learn more about our Spotlight Child of the month</p> 
 			</div>
 			
 		</div>
 	</div>
-</section>-->
+</section>
 
 <!-- BUBBLES WITH TEXT -->
-<section class="bubbles">
+<!--<section class="bubbles">
 
 	<div class="container">
 		<div class="row">
@@ -228,7 +136,7 @@
 		</div>
 	</div>
 
-</section>
+</section>-->
 
 
 
@@ -254,7 +162,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a href="/" class="navbar-brand-secondary">BE A CONDUIT FOR HOPE IN RWANDA AND THE DRC	</a>
+			      <a href="/" class="navbar-brand-secondary">BE A CONDUIT FOR HOPE</a>
 			    </div>
 			
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -302,7 +210,7 @@
 		<div class="row">
 			<div class="col-md-7">
 				<h3 class="partner">Partner with us in bringing hope</h3>
-				<%= link_to "Get Email Updates", "#", class: "btn btn-home" %>
+				<%= link_to "Get Email Updates", contact_path, class: "btn btn-home" %>
 			</div>
 			<div class="col-md-5">
 				<p class="contactHeader">Contact Us</p>
@@ -313,7 +221,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<p class="ftrCopy">&copy; 2014 Matumaini's Mission | Privacy Policy</p>
-				<p class="ftrText">Site by Big Moon Creative</p>
+				<p class="ftrText">Site by <%= link_to "Big Moon Creative", "http://bigmooncreative.com", class: "bmc-blue" %></p>
 			</div>
 		</div>
 	</div>
