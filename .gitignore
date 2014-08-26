@@ -16,3 +16,6 @@
 /tmp
 
 /confif/database.yml
+
+# Added production key
+/config/secrets.yml
