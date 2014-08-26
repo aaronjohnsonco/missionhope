@@ -1,7 +1,53 @@
-<!-- NAV -->
-		<div class="topNav">
-			<nav class="navbar navbar-op" role="navigation">
-			  <div class="container-fluid">
+
+
+<div class="secondary-top"></div>
+<%= render 'topnav' %>
+
+
+<!-- SIGN UP FORM -->
+<section class="contact-form">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="contact-hdr">Partner with us in bringing hope</h2>
+				<p class="contact-text">Provide the information below to receive updates on how your prayers and donations are impacting children in Rwanda and the DNC Africa.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div id="mc_embed_signup">
+					<form action="//matumainismission.us8.list-manage.com/subscribe/post?u=b0562c03cbb8c5681b8fec762&amp;	id=f7033b6ad9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="	validate" target="_blank" novalidate>
+						<div class="form-group">
+							<label for="mce-Email">Email</label>
+							<input type="email" value="" name="EMAIL" id="mce-Email" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="mce-FNAME">First Name</label>
+							<input type="text" name="FNAME" value="" id="mce-FNAME" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="mce-LNAME">Last Name</label>
+							<input type="text" name="LNAME" value="" id="mce-LNAME" class="form-control" />
+						</div>
+						
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form 	bot signups-->
+							<div style="position: absolute; left: -5000px;"><input type="text" name="	b_b0562c03cbb8c5681b8fec762_f7033b6ad9" tabindex="-1" value=""></div>
+							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-home">Subscribe</button>
+					</form>
+				</div>
+				<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+				<p class="contact-text-btm">After submitting your information check for a confirmation email.</p>
+			</div>
+			
+		</div>
+	</div>
+	
+</section>
+
+<div class="bottomNav">
+			<nav class="navbar-sec navbar-secondary" role="navigation">
+			  <div class="container">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example			-navbar-collapse-1">
@@ -10,7 +56,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a href="/" class="navbar-brand"><img src="assets/logoNav.png" /></a>
+			      <a href="/" class="navbar-brand-secondary">BE A CONDUIT FOR HOPE</a>
 			    </div>
 			
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,11 +78,9 @@
 			        </li>
 			      </ul>-->
 			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-4">
-			        <li><a href="#">ABOUT</a></li>
-			        <li><a href="#">SPONSORSHIP</a></li>
-			        <li><a href="#">FAQ</a></li>
-			        <li><a href="#">CONTACT</a></li>
+			      <ul class="nav navbar-nav navbar-right cl-effect-4-1">
+			        <li><a href="#">DONATE</a></li>
+			        <li><a href="#">SPONSOR A CHILD</a></li>
 			        <!--<li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"			></span></a>
 			          <ul class="dropdown-menu" role="menu">
@@ -52,4 +96,31 @@
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
-		<!-- END TOPNAV -->
+
+
+		<!-- FOOTER -->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h3 class="partner">Partner with us in bringing hope</h3>
+				<%= link_to "Get Email Updates", contact_path, class: "btn btn-home" %>
+			</div>
+			<div class="col-md-5">
+				<p class="contactHeader">Contact Us</p>
+				<p class="contactText">Main: 123-456-7890</p>
+				<p class="contactText">harmony@matumainismission.com</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p class="ftrCopy">&copy; 2014 Matumaini's Mission | Privacy Policy</p>
+				<p class="ftrText">Site by <%= link_to "Big Moon Creative", "http://bigmooncreative.com", class: "bmc-blue" %></p>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+
