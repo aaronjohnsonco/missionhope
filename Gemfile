@@ -33,6 +33,9 @@ gem 'autoprefixer-rails'
 
 gem 'rails_12factor'
 
+gem 'capistrano', '2.15.5'
+gem 'rvm-capistrano'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
