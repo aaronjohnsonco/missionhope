@@ -81,8 +81,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: rls-matumaini_production
-  username: admin
-  password: h0lein0ne
+#production:
+#  <<: *default
+#  database: rls-matumaini_production
+# username: 
+#  password: 
