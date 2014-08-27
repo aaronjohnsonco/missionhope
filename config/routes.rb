@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   get 'contact' => 'pages#contact', as: 'contact'
   get 'our-story' => 'pages#story', as: 'story'
+  get 'donate' => 'pages#donate', as: 'donate'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
