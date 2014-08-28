@@ -1,7 +1,6 @@
-<!-- NAV -->
-		<div class="topNav">
-			<nav class="navbar navbar-op" role="navigation">
-			  <div class="container-fluid">
+<div class="bottomNav">
+			<nav class="navbar-sec navbar-secondary" role="navigation">
+			  <div class="container">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example			-navbar-collapse-1">
@@ -10,7 +9,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a href="/" class="navbar-brand"><img src="assets/logoNav.png" /></a>
+			      <a href="/" class="navbar-brand-secondary">BE A CONDUIT FOR HOPE</a>
 			    </div>
 			
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,10 +31,9 @@
 			        </li>
 			      </ul>-->
 			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-4">
-			        <li><%= link_to "OUR STORY", story_path %></li>
-			        <li><%= link_to "SPONSORSHIP", sponsorships_path %></li>
-			        <li><a href="#">CONTACT</a></li>
+			      <ul class="nav navbar-nav navbar-right cl-effect-4-1">
+			        <li><%= link_to "DONATE", donate_path %></li>
+			        <li><%= link_to "SPONSOR A CHILD", sponsorships_path %></li>
 			        <!--<li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"			></span></a>
 			          <ul class="dropdown-menu" role="menu">
@@ -51,4 +49,28 @@
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
-		<!-- END TOPNAV -->
+
+
+		<!-- FOOTER -->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h3 class="partner">Partner with us in bringing hope</h3>
+				<%= link_to "Get Email Updates", contact_path, class: "btn btn-home" %>
+			</div>
+			<div class="col-md-5">
+				<p class="contactHeader">Contact Us</p>
+				<p class="contactText">Main: 123-456-7890</p>
+				<p class="contactText">harmony@matumainismission.com</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p class="ftrCopy">&copy; 2014 Matumaini's Mission | Privacy Policy</p>
+				<p class="ftrText">Site by <%= link_to "Big Moon Creative", "http://bigmooncreative.com", class: "bmc-blue" %></p>
+			</div>
+		</div>
+	</div>
+
+</section>

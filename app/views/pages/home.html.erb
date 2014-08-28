@@ -9,7 +9,7 @@
 				<div class="col-md-3 col-md-offset-9">
 					<div class="btn-box">
 						<p class="text-center"><%= link_to "Donate Now", donate_path, class: "btn btn-home btn-block" %></p>
-						<p class="text-center"><%= link_to "Sponsor a Child", "#", class: "btn btn-home btn-block" %></p>
+						<p class="text-center"><%= link_to "Sponsor a Child", sponsorships_path, class: "btn btn-home btn-block" %></p>
 						<!--<p class="btn-text">Spondor a child for as little as $34 a month. Find out how.</p>-->
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 					<div class="mask">
 						<h2>Sponsorships</h2>
 						<!--<p>This is text that will appear in the box when I hover over it.</p>-->
-						<%= link_to "Read More", "#", class:"btn btn-home btn-sm" %>
+						<%= link_to "Read More", sponsorships_path, class:"btn btn-home btn-sm" %>
 					</div>
 				</div>
 				<p class="text-center box-text">Learn about how you can sponsor a child in need</p>  
@@ -88,142 +88,5 @@
 	</div>
 </section>
 
-<!-- BUBBLES WITH TEXT -->
-<!--<section class="bubbles">
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="row bottomSpace">
-					<div class="col-md-3">
-						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
-					</div>
-					<div class="col-md-9">
-						<h3>This is where a title goes</h3>
-						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
-					</div>
-					<div class="col-md-9">
-						<h3>This is where a title goes</h3>
-						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-3 bottomSpace">
-						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
-					</div>
-					<div class="col-md-9">
-						<h3>This is where a title goes</h3>
-						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<%= image_tag 'img.jpg', style: "width:100%;border-radius:50%" %>
-					</div>
-					<div class="col-md-9">
-						<h3>This is where a title goes</h3>
-						<p>This is where text will go for this particlar portion of the site. It will contain a link at the bottom to proceed to the page that corresponds tha has more information.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</section>-->
-
-
-
-<!-- CALLOUT BAR
-<section class="callout">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3>BE A CONDUIT FOR HOPE</h3>
-			</div>
-		</div>
-	</div>
-</section>-->
-
-<div class="bottomNav">
-			<nav class="navbar-sec navbar-secondary" role="navigation">
-			  <div class="container">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example			-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a href="/" class="navbar-brand-secondary">BE A CONDUIT FOR HOPE</a>
-			    </div>
-			
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <!--<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Link</a></li>
-			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"			></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
-			          </ul>
-			        </li>
-			      </ul>-->
-			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-4-1">
-			        <li><a href="#">DONATE</a></li>
-			        <li><a href="#">SPONSOR A CHILD</a></li>
-			        <!--<li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"			></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			          </ul>
-			        </li>-->
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-		</div>
-
-
-<!-- FOOTER -->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7">
-				<h3 class="partner">Partner with us in bringing hope</h3>
-				<%= link_to "Get Email Updates", contact_path, class: "btn btn-home" %>
-			</div>
-			<div class="col-md-5">
-				<p class="contactHeader">Contact Us</p>
-				<p class="contactText">Main: 123-456-7890</p>
-				<p class="contactText">harmony@matumainismission.com</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<p class="ftrCopy">&copy; 2014 Matumaini's Mission | Privacy Policy</p>
-				<p class="ftrText">Site by <%= link_to "Big Moon Creative", "http://bigmooncreative.com", class: "bmc-blue" %></p>
-			</div>
-		</div>
-	</div>
-
-</section>
+<%= render 'footer' %>

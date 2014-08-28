@@ -13,4 +13,10 @@ class PagesController < ApplicationController
 
   def donate
   end
+
+  def updates
+  end
+
+  def sponsorships
+  end
 end
