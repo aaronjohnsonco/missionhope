@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def sponsorships
   end
+
+  def projects
+  end
 end
