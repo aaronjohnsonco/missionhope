@@ -32,10 +32,27 @@
 			        </li>
 			      </ul>-->
 			      
-			      <ul class="nav navbar-nav navbar-right cl-effect-5">
-			        <li><%= link_to "OUR STORY", story_path %></li>
-			        <li><%= link_to "SPONSORSHIP", sponsorships_path %></li>
-			        <li><a href="#">PROJECTS</a></li>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li>
+			        	<%= link_to_unless_current "OUR STORY", story_path do 
+			        		link_to "OUR STORY", story_path, class: "active-nav"
+			        	end %>
+			        </li>
+			        <li>
+			        	<%= link_to_unless_current "DONATE", donate_path do
+			        		link_to "DONATE", donate_path, class: "active-nav"
+			        	end %>
+			        </li>
+			        <li>
+			        	<%= link_to_unless_current "SPONSORSHIPS", sponsorships_path do
+			        		link_to "SPONSORSHIPS", sponsorships_path, class: "active-nav"
+			        	end %>
+			        </li>
+			        <li>
+			        	<%= link_to_unless_current "PROJECTS", projects_path do
+			        		link_to "PROJECTS", projects_path, class: "active-nav"
+			        	end %>
+			        </li>
 			        <!--<li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"			></span></a>
 			          <ul class="dropdown-menu" role="menu">

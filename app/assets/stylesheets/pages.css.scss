@@ -1,6 +1,25 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.thumb-hdr { font-family:'latoblack';text-transform:uppercase;text-align:center;color:#bbb; }
+.thumb-text { font-family:'latoregular';text-align:center; }
+.thumb-amt { font-family:'latolight';text-align:center;margin-bottom:18px; }
+
+.thumbnail-alt {
+  display: block;
+  padding: 4px 20px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  line-height: 1.42857143;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+
 .missionStatement { font-family:'latolight';font-size:1.5em;margin-bottom:25px; }
 a.missionSL { font-family:'latoregular';color:#E99824;font-size:1.2em; }
 a.missionSL:hover { font-family:'latoregular';color:#f6b14d;font-size:1.2em;text-decoration:none; }
