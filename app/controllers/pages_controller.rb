@@ -22,4 +22,7 @@ class PagesController < ApplicationController
 
   def projects
   end
+
+  def email_updates
+  end
 end

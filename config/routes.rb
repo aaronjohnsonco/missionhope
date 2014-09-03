@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'email-updates' => 'pages#updates', as: 'updates'
   get 'sponsorships' => 'pages#sponsorships', as: 'sponsorships'
   get 'projects' => 'pages#projects', as: 'projects'
+  get 'email-updates' => 'pages#email_updates', as: 'email_updates'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
