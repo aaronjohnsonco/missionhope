@@ -52,6 +52,10 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
+
+  task :restart, :roles => :web do
+    run "touch #{ current_path }/tmp/restart.txt"
+  end
 end
 
 #set :application, "set your application name here"
