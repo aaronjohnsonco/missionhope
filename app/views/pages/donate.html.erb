@@ -1,33 +1,63 @@
 <div class="donate-top"></div>
 <%= render 'topnav' %>
 
+
+
+
 <section class="donate-container">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7">
-				<h2 class="contact-hdr">How to Support</h2>
-				<p class="contact-text">There are several ways that you can support Matumaini's Mission:</p>
-				<h4>Give a one time gift.</h4>
-				<p>Lorizzle go to hizzle bizzle sizzle amizzle, pizzle adipiscing elizzle. Nullizzle sapien velizzle, break it down volutpizzle, suscipit cool, bow wow wow vel, arcu. Pellentesque eget tortor.</p>
-				<h4>Sponsor a child.</h4>
-				<p>Lorizzle go to hizzle bizzle sizzle amizzle, pizzle adipiscing elizzle. Nullizzle sapien velizzle, break it down volutpizzle, suscipit cool, bow wow wow vel, arcu. Pellentesque eget tortor.</p>
-				<h4>Pray</h4>
-				<p>Lorizzle go to hizzle bizzle sizzle amizzle, pizzle adipiscing elizzle. Nullizzle sapien velizzle, break it down volutpizzle, suscipit cool, bow wow wow vel, arcu. Pellentesque eget tortor.</p>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="PGN2JEC8SA76Y">
-
-					<button name="submit" class="btn btn-home">Donate Now</button>
-					<!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
-				</form>
-			</div>
-			<div class="col-md-5">
-				<%= image_tag "ChildStack2.jpg", style: "width:100%;" %>
+			<div class="col-md-12">
+				<h2 class="contact-hdr">How can you help?</h2>
 			</div>
 		</div>	
 	</div>
+
+
+	<div class="container">
+		<div class="row">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 nopadding">
+				<div class="donate-box">
+					<h3>Donate</h3>
+					<p>Every dollar given goes towards fulfilling the sponsorship needs for a child in need. Once those funds have been raised we apply gifts to the next child on the list. Everything that you give goes towards meeting those needs.</p>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="PGN2JEC8SA76Y">
+
+					<p class="text-center"><button name="submit" class="btn btn-home">Donate Now</button></p>
+					<!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 nopadding edges">
+				<div class="donate-box">
+					<h3 class="help-hdr">Sponsor a child</h3>
+					<p>We believe a sponsorship is more than just food or just schooling. That's why we have combined the sponsorship and made it possible to give these children both. We have taken the total cost of one years food,school fees, school supplies, uniform, and shoes. We have broken down the cost over the course of 12 months making it affordable for you and realistic. Once you've chosen to sponsor a child, you will receive the child's photo and information in the mail. Then look for monthly updates through email, as we visit the children and drop off their food.</p>
+					<p class="text-center"><%= link_to "SPONSOR a CHild", sponsorships_path, class: "btn btn-home" %></p>
+				</div>
+			</div>
+			<div class="col-md-4 nopadding">
+				<div class="donate-box">
+					<h3>Pray</h3>
+					<p> We know when God is on our side anything is possible. Your prayers for these children and this mission are important and are felt. If you would like be updated on upcoming projects and other updates, please join our email list for periodic emails.</p>
+					<p class="text-center"><%= link_to "GET UPDATES", updates_path, class: "btn btn-home" %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </section>
+
+
+
+
+
+
 
 
 <%= render 'footer' %>
