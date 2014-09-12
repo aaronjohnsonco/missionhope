@@ -25,4 +25,8 @@ class PagesController < ApplicationController
 
   def email_updates
   end
+
+  def faq
+  end
+  
 end
