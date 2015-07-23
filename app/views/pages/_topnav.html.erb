@@ -39,6 +39,11 @@
 			        	end %>
 			        </li>-->
 			        <li>
+			        	<%= link_to_unless_current "OUR STORY", story_path do
+			        		link_to "OUR STORY", story_path, class: "active-nav"
+			        	end %>
+			        </li>
+			        <li>
 			        	<%= link_to_unless_current "DONATE", donate_path do
 			        		link_to "DONATE", donate_path, class: "active-nav"
 			        	end %>
@@ -46,6 +51,11 @@
 			        <li>
 			        	<%= link_to_unless_current "SPONSORSHIPS", sponsorships_path do
 			        		link_to "SPONSORSHIPS", sponsorships_path, class: "active-nav"
+			        	end %>
+			        </li>
+			        <li>
+			        	<%= link_to_unless_current "PROJECTS", projects_path do
+			        		link_to "PROJECTS", projects_path, class: "active-nav"
 			        	end %>
 			        </li>
 			        <li>
