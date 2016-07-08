@@ -39,7 +39,7 @@ a.missionSL { font-family:'latoregular';color:#E99824;font-size:1.2em; }
 a.missionSL:hover { font-family:'latoregular';color:#f6b14d;font-size:1.2em;text-decoration:none; }
 
 a.bmc-blue { color:#666; }
-a.bmc-blue:hover { color:#39AED9;text-decoration:none; } 
+a.bmc-blue:hover { color:#39AED9;text-decoration:none; }
 
 .callToAction { border-top:1px solid #C7BFB9;border-bottom:1px solid #C7BFB9;padding-top:20px;padding-bottom:15px; }
 .nopadding {
@@ -274,7 +274,7 @@ a.bmc-blue:hover { color:#39AED9;text-decoration:none; }
    -ms-transition-delay: 0.3s;
    transition-delay: 0.3s;
 }
-	
+
 .view-fifth img {
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -631,11 +631,6 @@ a.bmc-blue:hover { color:#39AED9;text-decoration:none; }
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
-}				
+}
 
-
-
-
-
-
-
+.project_img { width:100%;margin-bottom:20px;  }
