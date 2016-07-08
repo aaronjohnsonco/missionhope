@@ -11,7 +11,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "https://github.com/insomniapplabs/missionhope.git"
+set :repository, "https://github.com/aaronjohnsonco/missionhope.git"
 
 set :branch, "master"
 set :rails_env, "production"
@@ -19,7 +19,7 @@ set :rails_env, "production"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-after "deploy", "deploy:cleanup" 
+after "deploy", "deploy:cleanup"
 
 namespace :deploy do
 	#%w[start stop restart].each do |command|
